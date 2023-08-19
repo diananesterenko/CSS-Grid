@@ -112,7 +112,6 @@ header .wrap {
 }
 footer {
   background-color: black;
-  display: flex;
 }
 footer div {
   padding: 30px 30px;
@@ -120,4 +119,33 @@ footer div {
 footer a {
   text-decoration: none;
   color: #2690d4;
+}
+.email {
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .text-section1 {
+    column-count: 1;
+  }
+  .footer-column1,
+  .section4-ContactUs {
+    grid-column: 1/5;
+  }
+  .footer-column2,
+  .section4-AboutUs {
+    grid-column: 1/5;
+  }
+  .footer-column1 {
+    padding-bottom: 0px;
+  }
+  .footer-column2 {
+    padding-top: 0px;
+  }
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas: "webDevelopment" "mobileApp" "techMarketing";
+  }
 }
